@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>About</title>
+    <link rel="stylesheet" href="/assets/stylesheet.css">
+</head>
+<body>
+<%include partials/nav.ejs%>
+<h3>Hello! About to tell you about about</h3>
+<p>This is fun, a lot of fun</p>
+<p>The query is as: </p>
+<!--<p> <%= qs.name %></p>-->
+<!--<p> <%= qs.dept %></p>-->
+
+<form id="contact-form" method="POST" action="/about">
+    <label for="who">Who do you wanna know about?</label>
+    <input type="text" name="who" value="<%= qs.name%>"/>
+    <label for="department">Which department</label>
+    <input type="text" name="department" value="<%= qs.dept%>"/>
+    <label for="email">Your email</label>
+    <input type="email" name="email"/>
+    <input type="submit" name="submit" id=""/>
+</form>
+
+
+<!--<a href="/"> Home </a>
+<a href="/about"> About </a>
+<a href="/profile/Apple"> Profile </a-->
+
+</body>
+</html>

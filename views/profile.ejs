@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Trying Net Ninja</title>
+    <link rel="stylesheet" href="/assets/stylesheet.css">
+</head>
+<body>
+<%include partials/nav.ejs%>
+<h1>Hello! To the other side</h1>
+<p><strong>Age:</strong><%= data.age %></p>
+<p><strong>Job:</strong><%= data.job %></p>
+<h2>Hobbies</h2>
+<ul>
+    <% data.hobbies.forEach(function(hobby){ %>
+    <li><%= hobby %></li>
+    <% }); %>
+</ul>
+<p>HAHA haso aaaalagyo yo page. Dekhera</p>
+<!--<a href="/"> Home </a>
+<a href="/about"> About </a>
+<a href="/profile/Apple"> Profile </a-->
+
+</body>
+</html>
